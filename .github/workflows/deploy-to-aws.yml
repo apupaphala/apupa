@@ -40,7 +40,7 @@ jobs:
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secret.AWS_ACCCESS_KEY_ID }}
-          AWS_ACCESS_SECRET_KEY_ID: ${{ secret.AWS_SECRTEY_ACCCESS_KEY_ID }}
+          AWS_ACCESS_SECRET_KEY: ${{ secret.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'ap-southeast-1'
           SOURCE_DIR: 'dist'
           
@@ -50,7 +50,7 @@ jobs:
           DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
           PATHS: '/*'
           AWS_ACCESS_KEY_ID: ${{ secret.AWS_ACCCESS_KEY_ID }}
-          AWS_ACCESS_SECRET_KEY_ID: ${{ secret.AWS_SECRTEY_ACCCESS_KEY_ID }}
+          AWS_ACCESS_SECRET_KEY: ${{ secret.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'ap-southeast-1'
                
             
